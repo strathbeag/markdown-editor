@@ -3,7 +3,7 @@
 	"main": "index.html",
 	"version":"1.0.0",
 	"window":{
-		"frame": false
+		"toolbar":false
 	},
 	"maintainers":[ {
 		"name": "Blacks_G",
