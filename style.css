@@ -1,0 +1,32 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+#inputArea {
+	overflow:auto;
+	height:300px;
+	border-style: solid;
+	border-width: 2px 1px 2px 1px;
+	border-color: #000000;
+	padding: 0.5em;
+}
+
+#previewArea {
+	overflow:auto;
+	height:300px;
+	border-style: solid;
+	border-width: 2px 1px 2px 1px;
+	border-style: #000000;
+	padding: 0.5em;
+	white-space:pre-wrap;
+	white-space:-moz-pre-wrap;
+	white-space:-pre-wrap;
+	white-space:-o-pre-wrap;
+	word-wrap:break-word;
+}
+

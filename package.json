@@ -1,0 +1,13 @@
+{
+	"name": "MarkdownEditor",
+	"main": "index.html",
+	"version":"1.0.0",
+	"window":{
+		"frame": false
+	},
+	"maintainers":[ {
+		"name": "Blacks_G",
+		 "web": "http://blacks-g.github.com"
+	}]
+}
+

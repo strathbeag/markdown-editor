@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Markdown Editor</title>
+		<meta charset="utf-8" />
+		<script src="jquery.min.js"></script>
+		<script src="markdown.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="style.css"/>
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+			.sidebar-nav {
+				padding: 9px 0;
+			}
+		</style>
+	</head>
+	<body style="-webkit-app-region: drag">
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Markdown Editor</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span6">
+					<pre id="inputArea" contenteditable></pre>
+				</div>
+				<div class="span6">
+					<div id="previewArea" contenteditable></div>
+					<label class="radio">
+						<input type="radio" name="optionsRadios" id="optionsRadiosHTML" value="html" checked>HTML
+					</label>
+					<label class="radio">
+						<input type="radio" name="optionsRadios" id="optionsRadiosView" value="view">Preview
+					</label>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
