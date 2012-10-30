@@ -88,3 +88,23 @@ $("#saveDialog").live("change",function(){
 
 });
 
+
+function onDrop(event){
+	event.preventDefault();
+	console.log(event.dataTransfer.files);
+	var val = event.dataTransfer.files[0].path;
+	var path = val.replace(/\\/g, '/');
+	if(!path.match(/\.(txt|md|markdown)$/i)){
+		alert('このファイル形式には対応していません');
+		return;
+	}
+	fs.readFile(path, 'utf8',function (err, data) {
+		if (err) throw err;
+		$('#inputArea').html(data.toString());
+		changeToMarkdown($("#inputArea").html());
+	});
+
+	//var files = event.dataTransfer.files;
+}
+
+window.addEventListener("drop", onDrop,false);
